@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package rendimento;
 
-/**
- *
- * @author ETECIA
- */
-public class Rendimento {
+import javax.swing.JOptionPane;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Rendimento {
+static String x;
+  
     public static void main(String[] args) {
-        // TODO code application logic here
+      x = JOptionPane.showInputDialog(null,"Digite o valor depositado");
+Double val1= Double.parseDouble(x);
+Double rend= val1*(0.7/100);
+JOptionPane.showMessageDialog(null, " Seu rendimento por mês foi de: " + rend+" reais");
     }
     
 }
